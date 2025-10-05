@@ -15,7 +15,7 @@ public class Driver
 		AdminService admin=new AdminService();
 		String welcome="----------Welcome To A14 Shopping-------------";
 		String thanks="Thank you Visit Again...😊😊😊";
-//		DisplayMessage.getMessage(welcome);
+		DisplayMessage.getMessage(welcome);
 		System.out.println();
 		boolean exit=true;
 		while(exit)
@@ -43,13 +43,14 @@ public class Driver
 				System.out.println("Choose a Valid Option...");
 				break;
 			}
-//			System.out.println("Do you want to Continue 😊😊😊 \nEnter Yes/No");
-//			if(scan.next().equalsIgnoreCase("no"))
-//			{
-//				exit=false;
-//				DisplayMessage.getMessage(thanks);
-//			}
+			System.out.println("Do you want to Continue 😊😊😊 \nEnter Yes/No");
+			if(scan.next().equalsIgnoreCase("no"))
+			{
+				exit=false;
+				DisplayMessage.getMessage(thanks);
+			}
 			System.out.println();
 		}
 	}
 }
+
